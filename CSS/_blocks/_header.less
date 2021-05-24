@@ -1,0 +1,165 @@
+//main: ..//style.less
+
+.header {
+    background: url(.././images/dest/headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+
+    h2 {
+        font-size: 30px;
+        font-family: "MuseoSansBlack";
+
+        span {
+            color: #fff;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 3px;
+    }
+
+    .header_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header_desc {
+            font-style: italic;
+            font-family: "MuseoSansBlack";
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header_list {
+            margin: 30px 0;
+
+            .header_item {
+                padding: 5px 0;
+                display: flex;
+                align-items: center;
+
+                .header_icon {
+                    margin-right: 10px;
+
+                    img {
+                        width: 26px;
+                    }
+                }
+
+
+                p {
+                    font-family: "MuseoSansLight";
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .header_btn {
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .header_end {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:966px) {
+    .header {
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+
+        .header_wrapper {
+            width: 300px;
+            margin: 0 auto;
+            flex-direction: column;
+
+            .header_list {
+                .header_item {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .header_end {
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .header {
+        padding-top: 30px;
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 16px;
+            letter-spacing: normal;
+        }
+
+        .header_start_desc {
+            padding: 0 30px;
+
+        }
+
+        .header_wrapper {
+            .header_list {
+                width: 250px;
+                margin: 30px auto;
+                .header_item {
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .header_icon {
+                        img {
+                            width: 21px;
+                        }
+                    }
+                }
+            }
+
+            .header_end {
+                width: 380px;
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .header {
+        .header_wrapper {
+            width: auto;
+            padding: 0 10px;
+
+            .header_end {
+                width: auto;
+            }
+        }
+    }
+}

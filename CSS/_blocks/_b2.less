@@ -1,0 +1,131 @@
+// main: ..//style.less
+
+.b2 {
+    padding: 90px 0;
+
+    .b2_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            margin-top: 80px;
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #F04D56;
+        }
+
+        h4 {
+            font-size: 20px;
+            margin: 30px 0;
+            font-family: "MuseoSansBlack";
+        }
+
+        .b2_start {
+            width: 600px;
+        }
+
+        .b2_list {
+            .b2_item {
+                display: flex;
+                margin-bottom: 22px;
+                align-items: center;
+
+                p {
+                    font-size: 20px;
+                    font-family: "MuseoSansLight";
+                    font-style: italic;
+                }
+
+            }
+        }
+
+        .b2_end {
+            width: 500px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .b2_end-desc {
+            margin-top: 30px;
+            font-size: 17px;
+            background-color: #F44172;
+            text-align: center;
+            padding: 30px;
+            text-transform: uppercase;
+            font-family: "MuseoSansBlack";
+
+            p {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1024px) {
+    .b2 {
+        .b2_wrapper {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:966px) {
+    .b2 {
+        .b2_wrapper {
+            padding: 0;
+            flex-direction: column;
+            width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        padding: 60px 0;
+        background-image: none;
+
+        .b2_wrapper {
+            width: 300px;
+            text-align: center;
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .b2_start {
+                width: auto;
+                margin-bottom: 30px;
+            }
+
+            .b2_end {
+                width: auto;
+            }
+
+            .b2_list {
+                .b2_item {
+                    flex-direction: column;
+
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

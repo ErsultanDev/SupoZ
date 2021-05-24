@@ -1,0 +1,99 @@
+//main: ..//style.less
+.b3 {
+    padding: 90px 0;
+    background: #F53469;
+    color: #fff;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "MuseoSansBlack";
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+
+    .b3_wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .b3_item {
+            text-align: center;
+            width: 270px;
+
+            h3 {
+                margin: 30px;
+                text-transform: uppercase;
+                font-size: 15px;
+            }
+
+            .b3_icon {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .b3_bottom {
+        width: 600px;
+        margin: 0 auto;
+
+        .b3_bottom_inner {
+            margin: 60px auto auto auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            p {
+                font-family: "MuseoSansLight";
+                margin: 0 10px;
+                font-size: 20px;
+            }
+
+            span {
+                font-family: "MuseoSansBlack";
+                font-size: 70px;
+            }
+        }
+
+        h3 {
+            margin-top: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+        }
+    }
+
+}
+
+@media (max-width:966px) {
+    .b3 {
+        .b3_wrapper {
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+
+            .b3_item {
+                margin: 0 auto 40px auto;
+            }
+        }
+
+        .b3_bottom {
+            margin-top: 30px;
+            width: auto;
+            padding: 0 20px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:425px){
+    .b3{
+        h2{
+            font-size: 22px;
+        }
+    }
+} 
