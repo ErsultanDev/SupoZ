@@ -109,6 +109,7 @@
 
 @media screen and (max-width:425px) {
     .header {
+        background-position: inherit;
         padding-top: 30px;
 
         h2 {
@@ -131,8 +132,13 @@
                 margin: 30px auto;
 
                 .header_item {
+                    flex-direction: column;
+                    margin-bottom: 6px;
+                    text-align: center;
+
                     p {
                         font-size: 15px;
+                        line-height: 25px;
                     }
 
                     .header_icon {
